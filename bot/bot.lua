@@ -84,7 +84,7 @@ function create_config( )
     "plugins",
     "tools"
  },
-    sudo_users = {157059515},
+    sudo_users = {274726385},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
@@ -460,7 +460,7 @@ end
 
 function is_gbanned(user_id)
   local var = false
-  local data = load_data(_config.moderation.data)
+  local data = load_data(_config.moderation.dat
   local user = user_id
   local gban_users = 'gban_users'
   if data[tostring(gban_users)] then
